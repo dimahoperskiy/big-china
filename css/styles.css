@@ -143,6 +143,7 @@ button:focus {
 	transform: translate(0px, 0px);
 }
 
+
 /* ------------------------- */
 
 .header__title {
@@ -308,7 +309,14 @@ button:focus {
 }
 
 #obj1Img {
-	left: -8px;
+	/*left: -8px;*/
+	display: block;
+	transform: translate(-200px, 0);
+	transition: all 0.5s ease 2.2s;
+}
+
+#obj1Img._active {
+	transform: translate(0px, 0px);
 }
 
 #obj2Img {

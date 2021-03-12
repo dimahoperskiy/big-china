@@ -5,10 +5,10 @@ if (animItems.length > 0) {
 	function animOnScroll() {
 		for (let index = 0; index < animItems.length; index++) {
 			const animItem = animItems[index];
+			console.log(animItem)
 			const animItemHeight = animItem.offsetHeight;
 			const animItemOffset = offset(animItem).top;
 			const animStart = 4;
-			console.log(window.innerHeight)
 			let animItemPoint = window.innerHeight - animItemHeight / animStart;
 			if (animItemHeight > window.innerHeight) {
 				animItemPoint = window.innerHeight - window.innerHeight / animStart;
