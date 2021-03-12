@@ -33,6 +33,11 @@ html {
 	margin-bottom: 0.01em;
 }
 
+body {
+	height: 100%;
+	overflow-x: hidden;
+}
+
 button:hover {
 	cursor: pointer;
 }
@@ -45,8 +50,9 @@ button:focus {
 
 .wrapper {
 	width: 100%;
-	min-height: 100%;
-	overflow-x: hidden;
+	height: 100%;
+	/*min-height: 100%;*/
+	/*overflow-x: hidden;*/
 }
 
 /* Обертка */
@@ -328,7 +334,7 @@ button:focus {
 .neuralImg {
 	width: 100%;
 	position: absolute;
-	top: -250px;
+	top: -145px;
 }
 
 .authorImg {
