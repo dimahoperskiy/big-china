@@ -5,7 +5,6 @@ if (animItems.length > 0) {
 	function animOnScroll() {
 		for (let index = 0; index < animItems.length; index++) {
 			const animItem = animItems[index];
-			console.log(animItem)
 			const animItemHeight = animItem.offsetHeight;
 			const animItemOffset = offset(animItem).top;
 			const animStart = 4;
@@ -13,9 +12,9 @@ if (animItems.length > 0) {
 			if (animItemHeight > window.innerHeight) {
 				animItemPoint = window.innerHeight - window.innerHeight / animStart;
 			}
-
 			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
 				animItem.classList.add('_active');
+				console.log(animItem + "activated")
 			} else {
 				if (!animItem.classList.contains('_anim-no-hide')) {
 					animItem.classList.remove('_active');

@@ -256,6 +256,7 @@ button:focus {
 }
 
 .courseForYou {
+	display: block;
 	z-index: 1;
 	margin-bottom: 50px;
 	position: relative;
@@ -932,8 +933,33 @@ button:focus {
 	border-radius: 40px;
 }
 
+.questionElem div {
+	transform: translate(0px, 0px);
+	opacity: 1;
+	transition: all 0.5s ease 0.2s;
+}
+
 .questionText {
 	margin: 35px 40px 35px 97px;
+}
+
+#lastQ {
+	margin-bottom: 220px;
+}
+
+.questionAnswer {
+	display: none;
+	opacity: 0;
+	font-size: 30px;
+	transition: opacity 0.5s linear;
+}
+
+.questionAnswer._active {
+	display: block;
+	transform: translate(0px, 0px);
+	opacity: 1;
+	transition: all 0.5s ease 0.2s;
+
 }
 
 .circleSpan {
