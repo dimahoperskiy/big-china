@@ -37,6 +37,14 @@
         $('.threePlus').toggleClass("_active");
     });
 
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            loop:true,
+            margin:10,
+        });
+    });
+
     $('.smoothScroll').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -49,5 +57,4 @@
             }
         }
     });
-
 })(jQuery);

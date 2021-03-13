@@ -939,6 +939,11 @@ button:focus {
 	display: grid;
 }
 
+.slider {
+	width: 90%;
+	justify-self: center;
+}
+
 .secondNeuralImg {
 	width: 100%;
 	position: absolute;
@@ -961,10 +966,10 @@ button:focus {
 }
 
 .caseElem {
-	position: relative;
+	/*position: relative;*/
 	display: grid;
-	width: 85%;
-	justify-self: center;
+	/*width: 85%;*/
+	/*justify-self: center;*/
 	grid-template-columns: 1fr 2fr;
 	margin-top: 80px;
 	border: 1px solid;
@@ -997,14 +1002,14 @@ button:focus {
 }
 
 .authorContainer {
-	position: relative;
+	/*position: relative;*/
 	display: grid;
 	margin-top: 70px;
 }
 
 .pointsContainer {
 	display: grid;
-	position: relative;
+	/*position: relative;*/
 	justify-self: center;
 	font-family: "Gilroy", sans-serif;
 	font-size: 33px;
@@ -1113,15 +1118,16 @@ button:focus {
 }
 
 .questionAnswer {
+	transform: translate(0, -150px);
 	opacity: 0;
 	visibility: hidden;
 	height: 0;
 	font-size: 30px;
-	transition: all 0.3s ease 0s;
-
+	transition: all 0.7s ease 0s
 }
 
 .questionAnswer._active {
+	transform: translate(0px, 0px);
 	opacity: 1;
 	visibility: visible;
 	height: auto;
