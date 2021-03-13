@@ -11,16 +11,22 @@
     $('#spanOne').click(function(e){
         e.preventDefault()
         $('#questionOne').toggleClass("_active");
+        $('.oneMinus').toggleClass("_active");
+        $('.onePlus').toggleClass("_active");
     });
 
     $('#spanTwo').click(function(e){
         e.preventDefault()
         $('#questionTwo').toggleClass("_active");
+        $('.twoMinus').toggleClass("_active");
+        $('.twoPlus').toggleClass("_active");
     });
 
     $('#spanThree').click(function(e){
         e.preventDefault()
         $('#questionThree').toggleClass("_active");
+        $('.threeMinus').toggleClass("_active");
+        $('.threePlus').toggleClass("_active");
     });
 
 

@@ -1097,18 +1097,18 @@ button:focus {
 }
 
 .questionAnswer {
-	display: none;
 	opacity: 0;
+	visibility: hidden;
+	height: 0;
 	font-size: 30px;
-	transition: opacity 0.5s linear;
+	transition: all 0.3s ease 0s;
+
 }
 
 .questionAnswer._active {
-	display: block;
-	transform: translate(0px, 0px);
 	opacity: 1;
-	transition: all 0.5s ease 0.2s;
-
+	visibility: visible;
+	height: auto;
 }
 
 .circleSpan {
@@ -1125,6 +1125,80 @@ button:focus {
 	display: grid;
 	align-content: center;
 }
+
+.onePlus {
+	height: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.onePlus._active {
+	height: auto;
+	visibility: visible;
+	opacity: 1;
+}
+
+.oneMinus {
+	height: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.oneMinus._active {
+	height: auto;
+	visibility: visible;
+	opacity: 1;
+}
+
+.twoPlus {
+	height: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.twoPlus._active {
+	height: auto;
+	visibility: visible;
+	opacity: 1;
+}
+
+.twoMinus {
+	height: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.twoMinus._active {
+	height: auto;
+	visibility: visible;
+	opacity: 1;
+}
+
+
+.threePlus {
+	height: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.threePlus._active {
+	height: auto;
+	visibility: visible;
+	opacity: 1;
+}
+
+.threeMinus {
+	height: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.threeMinus._active {
+	height: auto;
+	visibility: visible;
+	opacity: 1;
+}
+
 
 .oneImg {
 	position: absolute;
