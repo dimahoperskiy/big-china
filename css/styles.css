@@ -67,10 +67,14 @@ button:focus {
 	z-index: 7;
 	height: 100vh;
 	margin-left: 1%;
+	transform: translate(-85%, 0px);
+	transition: all 0.5s ease;
+
 }
 
 .menuWrapper._active {
 	margin-left: 0;
+	transform: translate(0px, 0px);
 }
 
 .menuLink {
@@ -124,7 +128,7 @@ button:focus {
 	/*z-index: 6;*/
 	/*position: fixed;*/
 	/*width: 25%;*/
-	height: 100%;
+	/*height: 100%;*/
 	/*overflow: hidden;*/
 	flex-direction: column;
 	font-size: 30px;
@@ -138,14 +142,21 @@ button:focus {
 	align-items: center;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	display: none;
+	display: flex;
+	visibility: hidden;
+	opacity: 0;
+	height: 0;
+	/*display: none;*/
 	/*transform: translate(-200px, 0px);*/
-	/*transition: all 0.5s ease;*/
+	transition: all 0.5s ease;
 }
 
 .menu._active {
-	display: flex;
-	/*transform: translate(0px, 0px);*/
+	visibility: visible;
+	opacity: 1;
+	height: 100%;
+	/*display: flex;*/
+	transform: translate(0px, 0px);
 }
 
 .menu a {
@@ -289,8 +300,13 @@ button:focus {
 	padding: 20px 10px 15px 15px;
 }
 
-.learnLabel .big p {
+.learnLabel .big h1 {
 	margin: 0;
+	font-family: "Georgia", sans-serif;
+	font-style: normal;
+	font-size: 42px;
+	font-weight: 700;
+	color: #353535;
 }
 
 .cont .small {
@@ -1279,7 +1295,7 @@ button:focus {
 		bottom: 50px;
 	}
 
-	.learnLabel .big {
+	.learnLabel .big h1 {
 		font-size: 35px;
 	}
 
@@ -1313,7 +1329,8 @@ button:focus {
 		bottom: 20%;
 	}
 
-	.learnLabel .big {
+
+	.learnLabel .big h1 {
 		font-size: 30px;
 	}
 
@@ -1570,6 +1587,41 @@ button:focus {
 }
 
 @media (max-width: 850px) {
+	.buyButton {
+		width: 60%;
+		padding: 25px 39px 25px 39px;
+		margin-top: 50px;
+	}
+
+	.questionAnswer._active {
+		padding: 20px;
+	}
+
+	.questionText {
+		margin: 35px 40px 35px 40px;
+	}
+
+	.prepaymentButton {
+		font-size: 20px;
+		padding: 10px;
+	}
+
+	.tariffElem ul {
+		padding: 100px 0 100px 15%;
+	}
+
+	.tariffElem li {
+		font-size: 22px;
+	}
+
+	.tariffPrice {
+		font-size: 45px;
+	}
+
+	.priceBig {
+		font-size: 60px;
+	}
+
 	.menuWrapper._active {
 		width: 60%;
 		margin-left: 0;
