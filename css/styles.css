@@ -201,6 +201,10 @@ button:focus {
 	display: grid;
 }
 
+.firstBlockWrapperMobile {
+	display: none;
+}
+
 .cont {
 	position: relative;
 	width: 80%;
@@ -209,15 +213,36 @@ button:focus {
 	justify-self: center;
 }
 
+.contMobile {
+	flex-direction: column;
+	display: flex;
+}
+
 #chinaMapImg {
-	width: 95%;
+width: 95%;
 }
 
 #chinaLabelImg {
-	width: 100%;
+width: 100%;
+justify-self: center;
+position: absolute;
+padding-top: 45px;
+}
+
+#chinaLabelImgMobile {
+
+	width: 80%;
 	justify-self: center;
-	position: absolute;
-	padding-top: 45px;
+	align-self: center;
+	padding-top: -31px;
+	position: relative;
+	top: -32px;
+}
+
+#chinaMapImgMobile {
+	width: 107%;
+	position: relative;
+	top: -92px;
 }
 
 /* Пример анимации */
@@ -230,6 +255,19 @@ button:focus {
 	width: 60%;
 	transform: translate(0px, 300px);
 	transition: all 0.8s ease 0s;
+}
+
+#authorImgMobile {
+	position: relative;
+	align-self: flex-end;
+	width: 80%;
+	transform: translate(0px, 300px);
+	transition: all 0.8s ease 0s;
+	margin-top: -750px;
+}
+
+#authorImgMobile {
+	transform: translate(0px, 0px);
 }
 
 #authorImg._active {
@@ -287,6 +325,11 @@ button:focus {
 	width: 65%;
 }
 
+.learnLabelMobile {
+	width: 75%;
+	align-self: center;
+}
+
 .learnLabel .big {
 	font-family: "Georgia", sans-serif;
 	font-style: normal;
@@ -300,6 +343,15 @@ button:focus {
 	padding: 20px 10px 15px 15px;
 }
 
+.learnLabelMobile .bigMobile {
+	font-family: "You2013", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	color: #353535;
+	-webkit-backdrop-filter: blur(20px);
+	padding: 20px 10px 15px 15px;
+}
+
 .learnLabel .big h1 {
 	margin: 0;
 	font-family: "Georgia", sans-serif;
@@ -308,6 +360,18 @@ button:focus {
 	font-weight: 700;
 	color: #353535;
 }
+
+.learnLabelMobile .bigMobile h1 {
+	margin: 0;
+	font-family: "Georgia", sans-serif;
+	font-style: normal;
+	font-size: 42px;
+	font-weight: 700;
+	color: #353535;
+	text-transform: uppercase;
+}
+
+
 
 .cont .small {
 	position: absolute;
@@ -322,8 +386,39 @@ button:focus {
 	padding: 0 10px 15px 15px;
 }
 
+.contMobile .smallMobile {
+	bottom: 80px;
+	font-family: "Gilroy", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color: #353535;
+	padding: 0 10px 15px 15px;
+	align-self: center;
+	width: 80%;
+	font-size: 35px;
+}
+
+.contMobile button {
+	font-family: "Gilroy-ExtraBold", sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 23px;
+	color: #303030;
+	padding: 18px 28px 16px 26px;
+	background-color: #ffdcb0;
+	border-radius: 30px;
+	border: none;
+	align-self: center;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+
 .learnLabel .small p {
 	margin: 0;
+}
+
+.smallMobile p {
+	margin-top: 10px;
 }
 
 .cont button {
@@ -968,8 +1063,8 @@ button:focus {
 .caseElem {
 	/*position: relative;*/
 	display: grid;
-	/*width: 85%;*/
-	/*justify-self: center;*/
+	width: 85%;
+	justify-self: center;
 	grid-template-columns: 1fr 2fr;
 	margin-top: 80px;
 	border: 1px solid;
@@ -1005,6 +1100,10 @@ button:focus {
 	/*position: relative;*/
 	display: grid;
 	margin-top: 70px;
+}
+
+.swiper-container {
+	width: 90%;
 }
 
 .pointsContainer {
@@ -1593,6 +1692,17 @@ button:focus {
 }
 
 @media (max-width: 850px) {
+	.firstBlockWrapper {
+		display: none;
+	}
+
+	.firstBlockWrapperMobile {
+		display: grid;
+	}
+	.secondBlockWrapper {
+		top: -50px;
+	}
+
 	.buyButton {
 		width: 60%;
 		padding: 25px 39px 25px 39px;
@@ -1617,7 +1727,7 @@ button:focus {
 	}
 
 	.tariffElem li {
-		font-size: 22px;
+		font-size: 27px;
 	}
 
 	.tariffPrice {
@@ -1695,6 +1805,9 @@ button:focus {
 }
 
 @media (max-width: 700px) {
+	#authorImgMobile {
+		margin-top: -560px;
+	}
 	.cont .small {
 		margin-top: 120px;
 	}
