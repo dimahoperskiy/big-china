@@ -109,6 +109,7 @@ button:focus {
 	-webkit-box-shadow: -14px 4px 8px 0 rgb(34 60 80 / 20%);
 	box-shadow: -14px 4px 8px 0 rgb(34 60 80 / 20%);
 	backdrop-filter: blur(9px);
+	-webkit-backdrop-filter: blur(9px);
 	display: none;
 }
 
@@ -563,12 +564,30 @@ button:focus {
 	background: radial-gradient(350.35% 3220.21% at 0% -88.81%, #ffdcb0 0%, rgba(255, 220, 176, 0) 100%);
 	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
-	/* Note: backdrop-filter has minimal browser support */
 	border-radius: 30px;
+}
+
+.programElemFirst {
+	opacity: 0;
+	transform: translate(200px, 0px);
+	transition: all 0.5s ease 0.3s;
+}
+
+.programElemFirst._active {
+	opacity: 1;
+	transform: translate(0px, 0px);
 }
 
 .programElemSec {
 	justify-self: start;
+	opacity: 0;
+	transform: translate(-200px, 0px);
+	transition: all 0.5s ease 0.3s;
+}
+
+.programElemSec._active {
+	opacity: 1;
+	transform: translate(0px, 0px);
 }
 
 #firstEL {
@@ -717,8 +736,40 @@ button:focus {
 	grid-column-gap: 3%;
 }
 
-.tariffElem {
+.tariffOne {
 	display: grid;
+	opacity: 0;
+	transform: translate(0px, 300px);
+	transition: all 1s ease 0.7s;
+}
+
+.tariffOne._active {
+	opacity: 1;
+	transform: translate(0px, 0px);
+}
+
+.tariffTwo {
+	display: grid;
+	opacity: 0;
+	transform: translate(0px, 300px);
+	transition: all 1s ease 1s;
+}
+
+.tariffTwo._active {
+	opacity: 1;
+	transform: translate(0px, 0px);
+}
+
+.tariffThree {
+	display: grid;
+	opacity: 0;
+	transform: translate(0px, 300px);
+	transition: all 1s ease 1.3s;
+}
+
+.tariffThree._active {
+	opacity: 1;
+	transform: translate(0px, 0px);
 }
 
 .tariffName {
@@ -785,6 +836,7 @@ button:focus {
 	opacity: 0.5;
 	box-shadow: 10px -10px 20px rgba(0, 0, 0, 0.25);
 	backdrop-filter: blur(70px);
+	-webkit-backdrop-filter: blur(70px);
 	border-radius: 40px;
 }
 
@@ -825,6 +877,7 @@ button:focus {
 	opacity: 0.5;
 	border-radius: 20px;
 	backdrop-filter: blur(70px);
+	-webkit-backdrop-filter: blur(70px);
 	/* Note: backdrop-filter has minimal browser support */
 }
 
@@ -857,6 +910,7 @@ button:focus {
 	opacity: 0.5;
 	border-radius: 20px;
 	backdrop-filter: blur(70px);
+	-webkit-backdrop-filter: blur(70px);
 	/* Note: backdrop-filter has minimal browser support */
 }
 
@@ -885,6 +939,7 @@ button:focus {
 	padding: 23px 66px 23px 67px;
 	background: radial-gradient(300.51% 5310.11% at 4.09% -82.65%, #ffdcb0 0%, rgba(255, 220, 176, 0) 100%);
 	backdrop-filter: blur(100px);
+	-webkit-backdrop-filter: blur(100px);
 	/* Note: backdrop-filter has minimal browser support */
 	border-radius: 30px;
 }
@@ -907,6 +962,7 @@ button:focus {
 
 	background: radial-gradient(300.51% 5310.11% at 4.09% -82.65%, #ffdcb0 0%, #ffdcb0 100%);
 	backdrop-filter: blur(100px);
+	-webkit-backdrop-filter: blur(100px);
 	/* Note: backdrop-filter has minimal browser support */
 	border-radius: 30px;
 }
@@ -1014,7 +1070,16 @@ button:focus {
 	font-weight: 400;
 	background: radial-gradient(190.53% 216.98% at -20.73% -29.01%, #ffdcb0 0%, rgba(255, 220, 176, 0.26) 100%);
 	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
 	border-radius: 40px;
+	opacity: 0;
+	transform: translate(-200px 0px);
+	transition: all 0.5s ease 0.5s;
+}
+
+.questionElem._active {
+	opacity: 1;
+	transform: translate(0px 0px);
 }
 
 .questionElem div {
@@ -1450,7 +1515,7 @@ button:focus {
 		justify-self: center;
 		width: 200%;
 		position: absolute;
-		top: -265px;
+		top: -200px;
 		left: auto;
 	}
 
