@@ -402,9 +402,9 @@ padding-top: 45px;
 	font-family: "Gilroy-ExtraBold", sans-serif;
 	font-style: normal;
 	font-weight: 800;
-	font-size: 23px;
+	font-size: 30px;
 	color: #303030;
-	padding: 18px 28px 16px 26px;
+	padding: 18px 32px 16px 28px;
 	background-color: #ffdcb0;
 	border-radius: 30px;
 	border: none;
@@ -1692,6 +1692,14 @@ padding-top: 45px;
 }
 
 @media (max-width: 850px) {
+	.tariffPrice {
+		font-size: 60px;
+	}
+
+	.priceBig {
+		font-size: 75px;
+	}
+
 	.firstBlockWrapper {
 		display: none;
 	}
@@ -1704,9 +1712,11 @@ padding-top: 45px;
 	}
 
 	.buyButton {
-		width: 60%;
+		width: 65%;
 		padding: 25px 39px 25px 39px;
 		margin-top: 50px;
+		font-size: 40px;
+
 	}
 
 	.questionAnswer._active {
@@ -1718,8 +1728,9 @@ padding-top: 45px;
 	}
 
 	.prepaymentButton {
-		font-size: 20px;
+		font-size: 25px;
 		padding: 10px;
+		margin-top: 50px;
 	}
 
 	.tariffElem ul {
@@ -1728,14 +1739,6 @@ padding-top: 45px;
 
 	.tariffElem li {
 		font-size: 27px;
-	}
-
-	.tariffPrice {
-		font-size: 45px;
-	}
-
-	.priceBig {
-		font-size: 60px;
 	}
 
 	.menuWrapper._active {
